@@ -1,0 +1,23 @@
+/* body {
+    background-color: aquamarine;
+} */
+
+.centerstuff {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+
+}
+
+.backgroundGreen {
+    background-color: greenyellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+
+}

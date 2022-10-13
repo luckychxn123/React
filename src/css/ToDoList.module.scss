@@ -1,0 +1,29 @@
+.todoItem {
+    margin-top: 1em;
+}
+
+.label {
+    padding: 0.25em;
+    user-select: none;
+}
+
+.count {
+    &::before {
+        content: '(';
+    }
+
+    &::after {
+        content: ')';
+    }
+
+}
+
+// for all class items
+.ToDoList_class {
+    margin-top: 50px;
+    color: rosybrown
+}
+
+.ToDoItem_class {
+    color: black;
+}

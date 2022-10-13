@@ -1,0 +1,57 @@
+$color: white;
+$color2: blue;
+
+
+.bgcolor {
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.bgcolor>div {
+    margin: 10px;
+}
+
+.text {
+    color: $color
+}
+
+
+// assign @mixin
+@mixin reset-list {
+    background-color: red;
+    color: pink;
+}
+
+.text2 {
+    @include reset-list
+}
+
+
+// conditional @mixin
+@mixin style-a {
+    background-color: black;
+    color: white;
+}
+
+@mixin style-b {
+    border: solid 2px black;
+    background-color: white;
+    color: black;
+}
+
+@mixin conditional($size) {
+    @if $size>2 {
+        @include style-a
+    }
+
+    @else {
+        @include style-b
+    }
+}
+
+.textcond {
+    @include conditional(1)
+}

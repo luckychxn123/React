@@ -7,18 +7,26 @@ import FunctionComp from './components/FunctionComp';
 import ScssComponent from './components/ScssComponent';
 import { ToDoList } from './components/ToDoList';
 import ToDoList_Class from './components/ToDoList_class'
+import Lifecycle from './components/Lifecycle'
+
+import { StopWatch } from './components/frd003 stopwatch'
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
+  // frd 001 - 002
   <React.StrictMode>
-    <App />
+    {/* <App />
     <FunctionComp />
     <ScssComponent />
     <ToDoList />
     <ToDoList_Class item_c="lucky" />
+    <Lifecycle /> */}
+    {/* frd 003 */}
+    <StopWatch />
   </React.StrictMode>
+
 );
 
 // If you want to start measuring performance in your app, pass a function

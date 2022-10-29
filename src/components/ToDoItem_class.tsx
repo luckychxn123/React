@@ -6,6 +6,7 @@ interface Props {
     i_index: number
     i_onDelete: (index: number) => void
 }
+// this.props.x [type in here](for export file) - 'props' is used for import of this file to assign value to type
 
 interface State {
     i_count: number

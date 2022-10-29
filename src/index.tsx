@@ -7,6 +7,7 @@ import FunctionComp from './components/FunctionComp';
 import ScssComponent from './components/ScssComponent';
 import { ToDoList } from './components/ToDoList';
 import ToDoList_Class from './components/ToDoList_class'
+import Lifecycle from './components/Lifecycle'
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -18,6 +19,7 @@ root.render(
     <ScssComponent />
     <ToDoList />
     <ToDoList_Class item_c="lucky" />
+    <Lifecycle />
   </React.StrictMode>
 );
 

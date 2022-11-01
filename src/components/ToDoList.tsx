@@ -50,6 +50,7 @@ export function ToDoList() {
         // [test] if without '(index: number) ... key = index', the whole thing wont work. 
         // [me] maybe becoz ToDoItem returned component needs itemm and count
         return (<div> To Do lists: {lst.map((itemhere: { id: number, name: string }, indexhere: number) =>
+            // must set itemhere.id, or itemx['id'] or when delete item => item amount wil be passed from previous to next
             <ToDoItem key={itemhere.id} index={indexhere} itemm={itemhere.name} onDelete={onDeletehere} />)}</div>)
     }
     let element = (<div style={{ textAlign: 'center' }}>

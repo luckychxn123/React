@@ -1,0 +1,2 @@
+Final store (store.ts) taken file of:
+	reduxFRD006 > store.ts

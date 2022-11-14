@@ -18,6 +18,7 @@ export function StopWatch() {
     const [milisec, setmilisec] = useState<number>(1000); //setting time +/-
     const [intervalId, setIntervalId] = useState<NodeJS.Timer>() //start or clear Interval
     const [mode, setMode] = useState<Mode>(Mode.Stop); //initial state = stop|| set mode for stop and start
+    // const [mode, setMode] = useState<"Start" | "Stop">("Stop"); //way 2
 
     const [laplst, setlaplst] = useState<string[]>([]); // set lst of all lapped items
     const [resetlapmode, setresetlapMode] = useState<RLMode>(RLMode.Reset); //[back] beginning is start|| set mode for stop and start

@@ -2,7 +2,7 @@ import styles from '../css/ToDoList.module.scss'
 import { useState } from 'react'
 import { ToDoItem } from './ToDoItem'
 
-export function ToDoList() {
+export function ToDoList(Props: any) {
     const name = 'lucky'; //variable
     //allows us to track state in a function component. first passed variable is lst
     const [itemx, setxItems] = useState<{ id: number, name: string }[]>([

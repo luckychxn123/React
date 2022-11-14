@@ -9,6 +9,7 @@ import ScssComponent from './components/ScssComponent';
 import { ToDoList } from './components/ToDoList';
 import ToDoList_Class from './components/ToDoList_class'
 import Lifecycle from './components/Lifecycle'
+import { TestuseEffect } from './components/TestuseEffect';
 
 import { StopWatch } from './components/frd003 stopwatch'
 
@@ -25,6 +26,7 @@ root.render(
     <ToDoList_Class item_c="lucky" />
     <Lifecycle /> */}
     {/* frd 003 */}
+    <TestuseEffect />
     <StopWatch />
   </React.StrictMode>
 
